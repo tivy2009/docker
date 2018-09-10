@@ -1,0 +1,24 @@
+# 挂载光驱
+
+mkdir /media/cdrom
+
+mount /dev/cdrom /media/cdrom
+
+
+yum clean all
+yum list
+
+运行yum makecache生成缓存
+
+yum -y update
+
+yum -y install vim*
+
+
+命令umount 已挂载的设备源（/dev/sdb1） 或已挂载目的点（/mnt）
+
+命令umount 文件系统/挂载点
+
+umount /dev/sdb1 == umount /mnt
+
+例如：umount /dev/sdb1 或 umount /mnt/
